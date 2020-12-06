@@ -249,7 +249,7 @@ def walk_frount(direction):
         if direction == 1: #go frount
             serial_walk_control(0.0,0.0,0,10,0,-150,40,foot_step_x,foot_step_y, setp_count, setp_depth);
         elif direction == 0: #go back
-            serial_walk_control(0.0,0.0,0,10,0,-150,40,foot_step_x,foot_step_y, setp_count-199, setp_depth);
+            serial_walk_control(0.0,0.0,0,10,0,-150,40,foot_step_x,foot_step_y, 199-setp_count, setp_depth);
         time.sleep(0.04)
     return 0
 
